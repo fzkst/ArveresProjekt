@@ -1,11 +1,8 @@
 package hu.fzks.aukcioprojekt;
 
-import jdk.jfr.Timespan;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.lang.reflect.Type;
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -99,7 +96,6 @@ public class Main {
         return licit;
     }
     static public void licitalas(){
-        LocalDateTime licitIdeje;
         System.out.println("Szeretne licitálni? (i/n)");
         String valasz = sc.nextLine();
         if (valasz.equals("i")){
@@ -115,7 +111,6 @@ public class Main {
                     System.out.println("Szeretne újra licitálni? (i/n)");
                     valasz = sc.nextLine();
                 }
-
             } while (valasz.equals("i"));
         }
 
